@@ -1,0 +1,40 @@
+name: 機能追加
+description: 新機能の提案
+title: "ADD: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新機能の提案をありがとうございます。以下のフォームに記入してください。
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 機能の説明
+      description: 追加したい機能について詳しく説明してください
+      placeholder: この機能は...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待する動作
+      description: この機能が実装された場合、どのように動作することを期待しますか？
+      placeholder: ユーザーが...をクリックすると...が表示される
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: 実装の詳細（オプション）
+      description: 実装方法について具体的なアイデアがあれば記入してください
+      placeholder: 以下のような方法で実装できると考えています...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: その他の情報
+      description: スクリーンショットや参考リンクなど、追加の情報があれば記入してください
