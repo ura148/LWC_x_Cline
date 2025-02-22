@@ -1,0 +1,67 @@
+name: バグ報告
+description: バグの報告
+title: "FIX: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグの報告をありがとうございます。以下のフォームに記入してください。
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: バグの説明
+      description: バグについて詳しく説明してください
+      placeholder: このバグは...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を記入してください
+      placeholder: |
+        1. '...' に移動
+        2. '...' をクリック
+        3. '...' を入力
+        4. エラーが発生
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待する動作
+      description: 正しい動作はどのようなものですか？
+      placeholder: 本来は...のように動作するはずです
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 実際の動作
+      description: 実際にはどのように動作していますか？
+      placeholder: 実際には...のように動作しています
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: バグが発生した環境について記入してください
+      placeholder: |
+        - OS: [例: Windows 10, macOS 12.0]
+        - ブラウザ: [例: Chrome 96, Safari 15]
+        - バージョン: [例: v1.0.0]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: その他の情報
+      description: エラーメッセージ、スクリーンショット、ログなど、追加の情報があれば記入してください

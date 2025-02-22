@@ -1,0 +1,61 @@
+name: 機能改善
+description: 既存機能の改善提案
+title: "ENHANCE: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能改善の提案をありがとうございます。以下のフォームに記入してください。
+
+  - type: textarea
+    id: current-feature
+    attributes:
+      label: 現在の機能
+      description: 改善したい既存の機能について説明してください
+      placeholder: 現在の機能は...
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement-description
+    attributes:
+      label: 改善案
+      description: どのように改善したいか詳しく説明してください
+      placeholder: この機能を...のように改善したい
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 改善理由
+      description: なぜこの改善が必要だと考えますか？
+      placeholder: この改善により...が向上する
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-benefits
+    attributes:
+      label: 期待される効果
+      description: この改善によってどのような効果が期待できますか？
+      placeholder: |
+        - ユーザビリティの向上
+        - パフォーマンスの改善
+        - 保守性の向上
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-suggestion
+    attributes:
+      label: 実装案（オプション）
+      description: 実装方法について具体的なアイデアがあれば記入してください
+      placeholder: 以下のような方法で実装できると考えています...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: その他の情報
+      description: スクリーンショットや参考リンクなど、追加の情報があれば記入してください
